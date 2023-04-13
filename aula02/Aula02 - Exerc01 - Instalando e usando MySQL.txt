@@ -8,11 +8,8 @@
 
 ------------------------------------
 --INÍCIO EXERCÍCIO
---Baixar imagem do repositório
-docker pull ivangancev/dts:ubuntusql
-
 --1) Cirar um container a partir da imagem baixada
-docker run --name MySQL -it ivangancev/dts:ubuntusql bash
+docker run --name MySQL -it ivangancev/ubuntusql:latest bash
 
 --2) Instalação do MySQL
 apt install mysql-server
