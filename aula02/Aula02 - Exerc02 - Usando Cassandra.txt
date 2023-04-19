@@ -116,7 +116,7 @@ select * from aula_cassandra where campo_texto = 'fiap4';
 --28) Inserir registros na tabela aula_cassandra_map
 insert into aula_cassandra_map (id, campo_texto, campo_map) values (1,'fiap1',{'chave1':10,'chave2':20});
 insert into aula_cassandra_map (id, campo_texto, campo_map) values (2,'fiap2',{'5dts':10});
-insert into aula_cassandra_map (id, campo_texto, campo_map) values (3,'fiap3',{'chave1':33.33,'LoveU':3000,'InfiniteStones':6});
+insert into aula_cassandra_map (id, campo_texto, campo_map) values (3,'fiap3',{'chave1':33,'LoveU':3000,'InfiniteStones':6});
 insert into aula_cassandra_map (id, campo_texto, campo_map) values (4,'fiap4',{'key':0,'PrivateKey':10010});
 insert into aula_cassandra_map (id, campo_texto, campo_map) values (5,'fiap5',{'reg5':50});
 insert into aula_cassandra_map (id, campo_texto, campo_map) values (6,'fiap6',{'DSIA':10});
@@ -150,7 +150,7 @@ delete from aula_cassandra where id = 2;
 delete campo_texto from aula_cassandra where id = 3;
 
 --37) Excluir registro pelo campo set na aula_cassandra_set
-delete campo_set['a']from aula_cassandra_set where id = 3;
+delete campo_set['abc']from aula_cassandra_set where id = 1;
 
 --38) Excluir conteúdo campo list na aula_cassandra_list
 delete campo_list[1]from aula_cassandra_list where id = 1;
